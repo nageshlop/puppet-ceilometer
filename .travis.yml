@@ -1,4 +1,7 @@
 language: ruby
+arch:
+  - amd64
+  - ppc64le
 bundler_args: --without development
 before_script:
   - echo $PUPPET_GEM_VERSION | grep '2.6' && git clone git://github.com/puppetlabs/puppetlabs-create_resources.git spec/fixtures/modules/create_resources || true
